@@ -21,34 +21,34 @@ In order to run the system the following packeges must be installed:
 ### Installing
 
 1. Clone the latest repository:
-
-```
-git clone https://github.com/AresL/IEDb
-```
+	
+	```
+	git clone https://github.com/AresL/IEDb
+	```
 
 2. A MongoDB must exist in the following address:
-
-```
-localhost:27017/iedb
-```
+	
+	```
+	localhost:27017/iedb
+	```
 
 3. Initialize DB:
-
-```
-node ./db/create_db.js
-```
+	
+	```
+	node ./db/create_db.js
+	```
 
 4. Run Node.js server:
-
-```
-node ./iedb.js
-```
+	
+	```
+	node ./iedb.js
+	```
 
 5. The system must be up and running. To access it go to:
 
-```
-http://localhost:3000/iedb/
-```
+	```
+	http://localhost:3000/iedb/
+	```
 
 ## Running the tests
 
