@@ -1,0 +1,74 @@
+An African elephant can reach heights of 3.9 m and possess a mass of as much as 6000 kg.
+Determine the weight of an African elephant in Newtons.
+60000
+1
+
+With fuel prices for combustible engine automobiles increasing, researchers and manufacturers have given more attention to the concept of an ultralight car. Using carbon composites, lighter steels and plastics, a fuel-efficient car can be manufactured at 540 kg.
+How much less does an ultralight car weigh compared to a 1450-kg Honda Accord (2007)?
+8918
+1
+
+According to the National Center for Health Statistics, the average mass of an adult American male is 86 kg.
+Determine the weight of an 86-kg man on the moon where the gravitational field is one-sixth that of the Earth.
+140
+1
+
+Captain John Stapp of the U.S. Air Force tested the human limits of acceleration by riding on a rocket sled of his own design, known as the Gee Whiz.
+What net force would be required to accelerate the 82-kg Stapp at 450 m/s/s (the highest acceleration tested by Stapp)?
+36900
+1
+
+Sophia, whose mass is 52 kg, experienced a net force of 1800 N at the bottom of a roller coaster loop during her school's physics field trip to the local amusement park.
+Determine Sophia's acceleration at this location.
+34.6
+2
+
+The Top Thrill Dragster stratacoaster at Cedar Point Amusement Park in Ohio uses a hydraulic launching system to accelerate riders from 0 to 54 m/s (120 mi/hr) in 3.8 seconds before climbing a completely vertical 420-foot hill.
+Determine the net force required to accelerate an 86-kg man.
+1222
+2
+
+ 
+Determine the net force required to accelerate a 540-kg ultralight car from 0 to 27 m/s (60 mph) in 10.0 seconds.|Determine the net force required to accelerate a 2160-kg Ford Expedition from 0 to 27 m/s (60 mph) in 10.0 seconds.
+1458|5832
+2
+
+Anna Litical and Noah Formula are experimenting with the effect of mass and net force upon the acceleration of a lab cart. They determine that a net force of F causes a cart with a mass of M to accelerate at 48 cm/s/s. What is the acceleration value of a cart with …
+a mass of M when acted upon by a net force of 2F?|a mass of 2M when acted upon by a net force of F?|a mass of 2M when acted upon by a net force of 2F?|a mass of 4M when acted upon by a net force of 2F?|a mass of 2M when acted upon by a net force of 4F?
+96|24|48|24|96
+2
+
+It's Friday night and Skyler has been assigned the noble task of baby-sitting Casey, his 2-year old brother. He puts a crash helmet on Casey, places him in the red wagon and takes him on a stroll through the neighborhood. As Skyler starts across the street, he exerts a 52 N forward force on the wagon. There is a 24 N resistance force and the wagon and Casey have a combined weight of 304 N. Construct a free body diagram depicting the types of forces acting upon the wagon. Then determine:
+the net force.|the mass.|the acceleration of the wagon.
+28|31|0.90
+3
+
+After a lead-off single in the 8th inning, Earl makes an effort to steal second base. As he hits the dirt on his head first dive, his 73.2 kg body encounters 249 N of friction force. Construct a free body diagram depicting the types of forces acting upon Earl. Then determine:
+the net force.|the acceleration.
+249|3.40
+3
+
+A rope is used to pull a 2.89-kg bucket of water out of a deep well.
+What is the acceleration of the bucket when the tension in the rope is 30.2 N?|If starting from rest, what speed will the bucket have after experiencing this force for 2.16 seconds?
+0.65|1.4
+3
+
+Moments after making the dreaded decision to jump out the door of the airplane, Darin's 82.5-kg body experiences 118 N of air resistance.
+Determine Darin's acceleration at this instant in time. HINT: begin by drawing a free body diagram and determine the net force.
+8.37
+3
+
+A 0.104-kg model rocket accelerates at 45.9 m/s/s on takeoff.
+Determine the upward thrust experienced by the rocket.
+5.79
+4
+
+Alejandra is attempting to drag her 32.6-kg Golden Retriever across the wooden floor by applying a horizontal force.
+What force must she apply to move the dog with a constant speed of 0.95 m/s? The coefficient of friction between the dog and the floor is 0.72.
+230
+4
+
+The coefficient of friction between the wheels of Dawson's 1985 Ford Coupe and the dry pavement is 0.85.
+Determine the acceleration which the 1300-kg Coupe experiences while skidding to a stop.
+8.3
+4

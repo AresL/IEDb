@@ -1,0 +1,74 @@
+Hector is walking his dog (Fido) around the neighborhood. Upon arriving at Fidella's house (a friend of Fido's), Fido turns part mule and refuses to continue on the walk. Hector yanks on the chain with a 67.0 N force at an angle of 30.0° above the horizontal. 
+Determine the horizontal component of the tension force.|Determine the vertical components of the tension force.
+58|33.5
+1
+
+Helen is parasailing. She sits in a seat harness which is attached by a tow rope to a speedboat. The rope makes an angle of 51° with the horizontal and has a tension of 350 N.
+Determine the horizontal component of the tension force.|Determine the vertical component of the tension force.
+220|272
+1
+
+Renee is on Spring Break and pulling her 21-kg suitcase through the airport at a constant speed of 0.47 m/s. She pulls on the strap with 120 N of force at an angle of 38° above the horizontal.
+Determine the normal force experienced by the suitcase.|Determine the total resistance force (friction and air resistance) experienced by the suitcase.
+95|132
+1
+
+Ben Laborin works for the South bookstore during the summer months to help prepare for Fall sales. Books from one supplier are shipped to the school in large crates equipped with rope handles on all sides. On one occasion, Ben momentarily pulled with a force of 692 N at an angle of 36.0° above the horizontal to accelerate a 112-kg crate of books. The coefficient of friction between the crates and the vinyl floor is 0.548.
+Determine the acceleration experienced by the crate. (Suggestion: Begin with a free body diagram.)
+1.62
+1
+
+A fire breaks out on a high rise building and a rescue helicopter is called to the scene. The helicopter is equipped with a rescue basket attached by a strong cable to a winch on the helicopter. The rescue basket is lowered to the roof and some occupants of the top floor escape to the roof and enter the basket. As the helicopter takes off, the cable momentarily makes a 78.2° angle to the horizontal, imparting a slight horizontal acceleration to the 621-kg basket and occupants across the roof top. The coefficient of friction between the basket and the roof top is 0.568 and the tension in the cable is 4980 N.
+Determine the acceleration of the basket and occupants. (Suggestion: Begin with a free body diagram.)
+0.532
+2
+
+The custodians clean the field house gym floor between games at the annual Holiday Basketball Classic. Chuck exerts a force on a 1.1-kg push broom as he walks across the floor at a constant speed. The coefficient of friction between the floor and the broom is 0.45 and the broom handle makes an angle of 41° with the horizontal.
+Determine the amount of force with which Chuck pushes downward (along the handle of the broom) in order to achieve this constant speed motion. (Suggestion: Begin with a free body diagram.)
+10.6
+2
+
+Lon Mauer is cleaning up the driveway after mowing the grass. He exerts a sudden downward force of 56.8 N at a constant angle of 54.7° below the horizontal in order to accelerate his 1.05-kg broom from rest. The coefficient of friction between the broom bristles and the driveway is 0.567.
+Determine the rate of acceleration of the broom. (Suggestion: Begin with a free body diagram.)
+0.67
+2
+
+South still displays with great pride the large sign boasting of their 1996 State Championship Girl’s Basketball Team. The 43.1-kg sign hangs from two cables which make an angle of 34.5° with the horizontal.
+Determine the tension in each of the cables.
+373
+2
+
+A massive light hangs over the table in Jeremy's dining room. The light is supported by four strong chains which make an angle of 75.0° with the horizontal. The force in each chain is 35.8 N.
+Determine the force with which a single chain pulls horizontally upon the light.|Determine the force with which a single chain pulls vertically upon the light.|Determine the mass of the light.
+9.3|34.6|14.1
+3
+
+Troy Ginometri, owner of the local floral shop, displays the sale of the month in the front window of his shop. The 5.6-kg flower pot is suspended by three chains from the ceiling. The chains make an angle of 25° with the vertical.
+Determine the tension in one of the chains.
+20
+3
+
+The historic Stanley Center for the Arts in Utica, New York is the proud owner of the world’s largest LED chandelier. The chandelier is 35 feet wide, 17 feet tall and has a mass of 2900 kg. It is directly supported by four cables which make an angle of 63° with the horizontal.
+Determine the tension in the cables.
+7974
+3
+
+Charles Blondin is famous for having crossed the Niagra Falls on an 1100-foot long tight-rope at a height of 160 feet above the gorge. He accomplished the feet several times in a variety of ways – blindfolded, in a sack, carrying his manager on his shoulders, pushing a wheelbarrow and walking on stilts. Suppose the 65-kg Blondin is at the midpoint of the tight-rope and has stopped to cook and eat an omelet.
+If the tightrope makes an angle of 5° with the horizontal, determine the tension in the rope.
+3654
+3
+
+Ben Laborin exerts a force on an 86-kg crate of books to push it up the ramp of the loading dock at a constant speed of 24 cm/s. The ramp makes an angle of 12° with the horizontal. The coefficient of friction between the crate and the ramp is 0.74.
+Assuming that Ben is pushing parallel to the inclined plane, determine the force with which he is pushing. (Suggestion: Begin with a free body diagram.)
+785
+4
+
+The infamous Lombard Street in San Francisco has an abnormally steep block which consists of several tight hairpin turns. On average, the roadway on this block of the street is inclined at 16°. Determine the force which would be required to pull a 23-kg wagon and child up the hill at constant speed.
+Assume the force is exerted parallel to the road and that friction is negligible.
+62
+4
+
+In an effort to determine the coefficient of friction between a wood block and a metal track, Anna Litical and Noah Formula place the block on the track and slowly elevate one of its ends until the block finally budges from rest and slides down the incline. Anna and Noah repeat several trials and determine that the block accelerates from its rest position when the track makes an angle of 38° above the horizontal.
+Use this angle value to determine the coefficient of friction. (Suggestion: Begin with a free body diagram.)
+0.78
+4

@@ -1,0 +1,78 @@
+Over the course of an 8 hour day, 38000 C of charge pass through a typical computer (presuming it is in use the entire time).
+Determine the current for such a computer.
+1.3
+1
+
+The large window air conditioner in Anita Breeze's room draws 11 amps of current. The unit runs for 8.0 hours during the course of a day.
+Determine the quantity of charge that passes through Anita's window AC during these 8.0 hours.
+320000
+1
+
+A power saw at the local hardware store boasts of having a 15-Amp motor.
+Determine its resistance when plugged into a 110-Volt outlet.
+13
+1
+
+Defibrillator machines are used to deliver an electric shock to the human heart in order to resuscitate an otherwise non-beating heart. It is estimated that a current as low as 17 mA through the heart is required to resuscitate.
+Using 100,000 Ω as the overall resistance, determine the output voltage required of a defibrillating device.
+1700
+1
+
+A stun gun or TASER is designed to put out a few seconds worth of electric pulses that impress a voltage of about 1200 V across the human body. This results in an average current of approximately 3 mA into a human body.
+Using these figures, estimate the resistance of the human body.
+400000
+2
+
+Alfredo deDarke sleeps with a 7.5-Watt night light bulb on. He turns it on before getting in bed and turns it off 8 hours later.
+Determine the amount of energy used during one evening in units of kiloWatt•hours.|Electrical energy costs 13 cents/kW•hr where Alfredo lives. Determine the annual (365 days) cost of this practice of using a 7.5-Watt night light.|Determine the annual savings if Alfredo replaced his 7.5-Watt incandescent night light by a 0.5-Watt LED night light.
+0.06|2.8|2.7
+2
+
+Having recently lost her job, Penny Penching is looking for every possible means of cutting costs. She decides that her 4.0-Watt clock radio alarm does not need to be on for 24 hours every day since she only needs it for waking up after her average 8-hour sleep. So she decides to plug it in before going to sleep and to unplug it when waking. Penny pays 12 cents per kiloWatt•hour for her electricity.
+How many dollars is Penny able to save over the course of a month (31 days) with her new alarm clock usage pattern?
+0.24
+2
+
+The power of a 1.5-volt alkaline cell varies with the number of hours of operation. A brand new D-cell can deliver as much as 13 A through a copper wire connected between terminals.
+Determine the power of a brand new D-cell.
+19.5
+2
+
+A central air conditioner in a typical American home operates on a 220-V circuit and draws about 15 A of current.
+Determine the power rating of such an air conditioner.|Determine the energy consumed (in kW•hr) if operated for 8 hours per day.|Determine the monthly cost (31 days) if the utility company charges 13 cents per kW•hr.
+3300|26|106
+3
+
+A 3-way light bulb for a 110-V lamp has two different filaments and three different power ratings. Turning the switch of the lamp toggles the light from OFF to low (50 W) to medium (100 W) to high (150 W) brightness. These three brightness settings are achieved by channeling current through the high resistance filament (50 W), the low resistance filament (100 W) or through both filaments.
+Determine the resistance of the 50 W filaments.|Determine the resistance of the 100 W filaments.
+242|121
+3
+
+An overhead high voltage (4.0x105 V) power transmission line delivers electrical energy from a generating station to a substation at a rate of 1500 MW (1.5x109 W).
+Determine the resistance of the cables.|Determine the current in the cables.
+107|3750
+3
+
+The UL panel on the bottom of an electric toaster oven indicates that it operates at 1500 W on a 110 V circuit.
+Determine the electrical resistance of the toaster oven.
+8.1
+3
+
+Determine the equivalent resistance of a 6.0 Ω and a 8.0 Ω resistor if …
+… connected in series.|… connected in parallel.
+14|3.4
+4
+
+Two resistors with resistance values of 6.0 Ω and 8.0 Ω are connected to a 12.0-volt source. Determine the overall current in the circuit if the resistors are …
+… connected in series.|… connected in parallel.
+0.86|3.5
+4
+
+A 4.5-volt series circuit consists of two resistors. Resistor A has three times the resistance as resistor B. An ammeter records a current of 160 mA of current.
+Determine the resistance values of resistor A.|Determine the resistance values of resistor B.
+21.1|7
+4
+
+
+
+

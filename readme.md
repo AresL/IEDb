@@ -16,6 +16,9 @@ In order to run the system the following packages must be installed:
 
 * Node.js 6.11+
 * MongoDB 3.4+
+* Python 3.6+
+
+It is also necessary to be connected to the internet, in order for Bootstrap to work correctly.
 
 ### Installing
 
@@ -31,13 +34,19 @@ In order to run the system the following packages must be installed:
 	node ./db/create_db.js
 	```
 
-3. Run Node.js server:
+3. Add Exercises to db:
+	
+	```
+	python ./data/insert_chapters.py
+	```
+
+4. Run Node.js server:
 	
 	```
 	node ./iedb.js
 	```
 
-4. The system must be up and running. You can access it in the address:
+5. The system must be up and running. You can access it in the address:
 
 	```
 	http://localhost:3000/iedb/
@@ -48,6 +57,7 @@ In order to run the system the following packages must be installed:
 * [Node.js 6.11](https://nodejs.org/en/blog/release/v6.11.0/) - The web framework used
 * [Python 3.6](https://docs.python.org/3.6/whatsnew/3.6.html) - The script used to import Exercises (out of plain text)
 * [MongoDB 3.4](https://www.mongodb.com/mongodb-3.4) - Db implementation
+* [Bootstrap 3.3.7](https://getbootstrap.com/docs/3.3/getting-started/) - Bootstrap implementation
 
 ## Authors
 

@@ -1,0 +1,78 @@
+Determine the momentum of …
+… a 0.45 Caliber bullet (m = 0.162 kg) leaving the muzzle of a gun at 860 m/s.|… a 110-kg professional fullback running across the line at 9.2 m/s.|… a 360,000-kg passenger plane taxiing down a runway at 1.5 m/s 
+139|1000|540000
+1
+
+A bicycle has a momentum of 24 kg•m/s. What momentum would the bicycle have if it had …
+… twice the mass and was moving at the same speed?|… the same mass and was moving with twice the speed?|… one-half the mass and was moving with twice the speed?|… the same mass and was moving with one-half the speed?|… three times the mass and was moving with one-half the speed?|… three times the mass and was moving with twice the speed?
+48|48|24|12|36|144
+1
+
+According to the Guinness Book of World Records, the fastest recorded baseball pitch was delivered by Nolan Ryan in 1974. The pitch was clocked at 100.9 mi/hr (45.0 m/s).
+Determine the impulse required to give a 0.145-kg baseball such a momentum.
+6.52
+1
+
+Kara Less was applying her makeup when she drove into South's busy parking lot last Friday morning. Unaware that Lisa Ford was stopped in her lane 30 feet ahead, Kara rear-ended Lisa's rented Taurus. Kara's 1300-kg car was moving at 11 m/s and stopped in 0.14 seconds.
+Determine the momentum change of Kara's car.|Determine the impulse experienced by Kara's car.|Determine the magnitude of the force experienced by Kara's car.
+-14000|-14000|100000
+1
+
+An interesting story is often told of baseball star Johnny Bench when he was a rookie catcher in 1968. During a Spring Training game, he kept signaling to star pitcher Jim Maloney to throw a curve ball. Maloney continuously shook off Bench's signal, opting to throw fastballs instead. The rookie catcher walked to the mound and told the veteran Maloney that his fastball wasn't fast enough and that he should throw some curve balls. Bench again signaled for a curve. Maloney shook of the signal and threw a fastball. Before the ball reached the plate, Bench took off his glove; he then caught the pitch barehanded.
+Determine the impulse required to stop a 0.145-kg baseball moving at 35.7 m/s (80.0 mi/hr).|If this impulse is delivered to the ball in 0.020 seconds, then what is magnitude of the force acting between the bare hand and the ball?
+-5.18|259
+2
+
+While playing basketball in PE class, Logan lost his balance after making a lay-up and colliding with the padded wall behind the basket. His 74-kg body decelerated from 7.6 m/s to 0 m/s in 0.16 seconds.
+Determine the force acting upon Logan's body.|If Logan had hit the concrete wall moving at the same speed, his momentum would have been reduced to zero in 0.0080 seconds. Determine what the force on his body would have been for such an abrupt collision.
+3500|70000
+2
+
+NASA's Langley Research Center has been experimenting with the use of air bags to soften the landings of crew exploration vehicles (CEV) on land.
+What stopping time will be required in order to safely stop a 7250 kg CEV moving at 7.65 m/s with an average force of 426000 N (an average force of 6 Gs)?
+0.130
+2
+
+In a study conducted by a University of Illinois researcher, the football team at Unity High School in Tolono, IL was equipped for an entire season with helmets containing accelerometers. Information about every impact in practice and in games was sent to a computer present on the sidelines. The study found that the average force on a top of the head impact was 1770 N and endured for 7.78 milliseconds.
+Using a head mass of 5.20 kg and presuming the head to be a free body, determine the velocity change experienced in such an impact.
+2.65
+2
+
+Cassie has just finished her session on the trampoline during PE. As she prepares to exit the trampoline, her vertical momentum is reduced by a series of three resistive impulses with the bounce mat. Just prior to this series of impulses, her 48.5-kg body is moving downward at 8.20 m/s. On the first impulse, Cassie experiences an average upward force of 230 N for 0.65 seconds. The second impulse of 112 N•s lasts for 0.41 seconds. The last impulse involves an average upward force of 116 N which cases a 84 kg•m/s momentum change.
+What vertical velocity does Cassie have after these three impulses?
+1.08
+3
+
+Aaron Agin nodded off while driving home from play practice this past Sunday evening. His 1500-kg car hit a series of guardrails while moving at 19.8 m/s. The first guard rail delivered a resistive impulse of 5700 N•s. The second guard rail pushed against his car with a force of 79000 N for 0.12 seconds. The third guard rail collision lowered the car's velocity by 3.2 m/s.
+Determine the final velocity of the car.
+6.5
+3
+
+Mr. H ignites the enthusiasm of the class with a home-made cannon demonstration. The 1.27-kg cannon is loaded with a 54-gram tennis ball and placed on the floor. Mr. H adds the fuel, waits for its vapors to fill the reaction chamber and then brings a match nearby. The explosion stuns the crowd and propels the ball forward. A photogate measurement determines that the cannon recoiled backwards with a speed of 7.8 m/s.
+Determine the speed of the ball.
+180
+3
+
+An 82-kg male and a 48-kg female pair figure skating team are gliding across the ice at 7.4 m/s, preparing for a throw jump maneuver. The male skater tosses the female skater forward with a speed of 8.6 m/s.
+Determine the speed of the male skater immediately after the throw.
+6.7
+3
+
+A candy-filled piñata is hung from a tree for Matthew's birthday. During an unsuccessful attempt to break the 4.4-kg piñata, Hayden cracks it with a 0.54-kg stick moving at 4.8 m/s. The stick stops and the piñata undergoes a gentle swinging motion.
+Determine the swing speed of the piñata immediately after being cracked by the stick.
+0.59
+4
+
+During an in-class demonstration of momentum change and impulse, Mr. H asks Jerome (102 kg) and Michael (98 kg) to sit on a large 14-kg skate cart. Mr. H asks Suzie (44 kg) to sit on a second 14-kg skate cart. The two carts are placed on low friction boards in the hallway. Jerome pushes off of Suzie's cart. Measurements are made to determine that Suzie's cart acquired a post-impulse speed of 9.6 m/s.
+Determine the expected recoil speed of Jerome and Michael's cart.
+2.6
+4
+
+To Mr. H's disgust, a 450-g black crow is raiding the recently-filled bird feeder. As Mr. H runs out the back door with his broom in an effort to scare the crow away, it pushes off the 670-gram feeder with a takeoff speed of 1.5 m/s.
+Determine the speed at which the feeder initially recoils backwards.
+1
+4
+
+
+
+
