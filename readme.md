@@ -1,6 +1,10 @@
-# Project Title
+# IEDb
 
-One Paragraph of project description goes here
+IEDb (Internet Exercise Database) is a web platform, based on Node.js, where Exercises can be stored and then be solved and rated by users of different Ability Levels.
+Through this process the system produces a personalized difficulty for the users that will attempt to solve the Exercise.
+The accuracy of the presiction increases as more users rate the Exercise.
+
+For demonstration purposes a number of physics Exercises has been added to the system. 
 
 ## Getting Started
 
@@ -8,11 +12,11 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+In order to run the system the following packeges must be installed:
 
-```
-Give examples
-```
+* Node.js 6.11+
+* MongoDB 3.4+
+* Python 3.6+
 
 ### Installing
 
@@ -58,23 +62,17 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Node.js 6.11](https://nodejs.org/en/blog/release/v6.11.0/) - The web framework used
+* [Python 3.6](https://docs.python.org/3.6/whatsnew/3.6.html) - The script used to import Exercises (out of plain text)
+* [MongoDB 3.4](https://www.mongodb.com/mongodb-3.4) - db implementation
 
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Ares Lianos** - *Initial work* - [AresL](https://github.com/AresL)
 
 ## License
 
