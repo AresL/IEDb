@@ -19,22 +19,36 @@ In order to run the system the following packeges must be installed:
 * Python 3.6+
 
 ### Installing
-c
-A step by step series of examples that tell you have to get a development env running
 
-Say what the step will be
+1. Clone the latest repository:
 
 ```
-Give the example
+git clone https://github.com/AresL/IEDb
 ```
 
-And repeat
+2. A MongoDB must exist in the following address:
 
 ```
-until finished
+localhost:27017/iedb
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+3. Initialize DB:
+
+```
+node ./db/create_db.js
+```
+
+4. Run Node.js server:
+
+```
+node ./iedb.js
+```
+
+5. The system must be up and running. To access it go to:
+
+```
+http://localhost:3000/iedb/
+```
 
 ## Running the tests
 
