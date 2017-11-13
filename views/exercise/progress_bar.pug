@@ -1,0 +1,126 @@
+
+link(rel='stylesheet' type='text/css' href='/css/progress_bar.css')
+
+div(id="progress_bar" class="row bs-wizard" style="border-bottom:0;")
+	|
+	|
+	if userExercise.isRead
+		div(class="col-xs-4 bs-wizard-step complete")
+			|
+			|
+			div(class="text-center bs-wizard-stepnum") Read
+			|
+			|
+			div(class="progress")
+				|
+				|
+				div(class="progress-bar")
+				|
+				|
+			|
+			|
+			div( class="bs-wizard-dot")
+			|
+			|
+
+			
+	else
+		div(class="col-xs-4 bs-wizard-step disabled")
+			|
+			|
+			div(class="text-center bs-wizard-stepnum") Read
+			|
+			|
+			div(class="progress")
+				|
+				|
+				div(class="progress-bar")
+				|
+				|
+			|
+			|
+			div( class="bs-wizard-dot")
+			|
+			|
+			
+	if userExercise.isSolved
+		div(class="col-xs-4 bs-wizard-step complete")
+			|
+			|
+			div(class="text-center bs-wizard-stepnum") Solved
+			|
+			|
+			div(class="progress")
+				|
+				|
+				div(class="progress-bar")
+				|
+				|
+			|
+			|
+			div( class="bs-wizard-dot")
+			|
+			|
+			
+	else
+		div(class="col-xs-4 bs-wizard-step disabled")
+			|
+			|
+			div(class="text-center bs-wizard-stepnum") Solve
+			|
+			|
+			div(class="progress")
+				|
+				|
+				div(class="progress-bar")
+				|
+				|
+			|
+			|
+			div( class="bs-wizard-dot")
+			|
+			|
+			
+	if userExercise.isRated
+		div(class="col-xs-4 bs-wizard-step complete")
+			|
+			|
+			div(class="text-center bs-wizard-stepnum") Rated
+			|
+			|
+			div(class="progress")
+				|
+				|
+				div(class="progress-bar")
+				|
+				|
+			|
+			|
+			div( class="bs-wizard-dot")
+			|
+			|
+
+			
+	else
+		div(class="col-xs-4 bs-wizard-step disabled")
+			|
+			|
+			div(class="text-center bs-wizard-stepnum") Rate
+			|
+			|
+			div(class="progress")
+				|
+				|
+				div(class="progress-bar")
+				|
+				|
+			|
+			|
+			div( class="bs-wizard-dot")
+			|
+			|
+
+|
+|
+|
+|

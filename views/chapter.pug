@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+|
+|
+html
+	|
+	|
+	head
+		|
+		|
+		include includes/head.pug
+		|
+		|
+		link(href="/js/star-rating/css/star-rating.css" media="all" rel="stylesheet" type="text/css")
+		|
+		|
+		link(rel='stylesheet' type='text/css' href='/css/chapter.css')
+		|
+		|
+		title Chapter #{number}
+		|
+		|
+	|
+	|
+	body
+		|
+		|
+		include includes/header
+		|
+		|
+		#content
+			|
+			|
+			//Row 1: Links to all Chapters
+			#chapters_row.row
+				|
+				|
+				#chapters.col-xs-12
+					|
+					|
+					ul
+						|
+						|
+						//- The number of Chapters is set to 6
+						each chapter in [1, 2, 3, 4, 5, 6]
+							//-If this is the current chapter
+							if chapter==number
+								li(class="active")
+									a(href="#") Chapter #{chapter}
+								|
+								|
+							//-Else this not the current chapter
+							else
+								li
+									-var link = "/iedb/chapter_" + chapter
+									a(href=link) Chapter #{chapter}
+								|
+								|
+					|
+					|
+				|
+				|
+			|
+			|
+			//- Row 2: Column's labels
+			#column_labels_row.row
+				|
+				|
+				#exercise_label.col-xs-8
+					|
+					|
+					h2 Exercise
+					|
+					|
+				|
+				|
+				#difficulty_label.col-xs-4
+					|
+					|
+					h2 Difficulty
+					|
+					|
+				|
+				|
+			|
+			|
+			//- Next Rows: Chapter's Exercises and corresponding difficulties
+			if exercises.length > 0
+				each exercise, exercise_index in exercises.reverse()
+					
+					if exercise_index%2==0
+						-var class_name="odd-row"
+					else
+						-var class_name="even-row"
+					
+					#exercise_row.row(class=class_name)
+						|
+						|
+						#exercise.col-xs-8
+							-var exercise_link = "/iedb/chapter_" + number + "/exercise_" + exercise.number
+							a(class="color_link" href=exercise_link)
+								|
+								|
+								h3.align-middle #{exercise.title}
+							|
+							|
+						|
+						|
+						-var difficulty = exercise.getDifficulty(userElo)
+						#rating_stars.col-xs-3
+							|
+							|
+							-var rating_id = "rating_" + (exercise_index+1)
+							input.rating-loading(id=rating_id type="text" value=difficulty data-show-clear="false")
+							|
+							|
+							script.
+								//Initialize difficulty's stars
+								$("##{rating_id}").rating({
+									stars: 4
+									, displayOnly: "true"
+									, min: 0
+									, max: 4
+									, step: "0.1"
+								});
+							|
+							|
+						|
+						|
+						#rating_value.col-xs-1
+							h3.align-middle #{difficulty.toFixed(2)}/4
+							|
+							|
+						|
+						|
+					|
+					|
+			else
+				#exercise_row.row
+					|
+					|
+					#exercise.col-xs-12
+						|
+						|
+						h4.align-middle There are no exercises in this Chapter
+					|
+					|
+				|
+				|
+			
+		|
+		|
+	|
+	|

@@ -1,0 +1,90 @@
+
+link(rel='stylesheet' type='text/css' href='/css/header.css')
+script(src="/js/utilities.js")
+
+#container.container-fluid
+
+	#header.row
+		|
+		|
+		#logo_col.col-xs-2
+			|
+			|
+			a(href="/iedb/")
+				|
+				|
+				img#logo(src="/img/iedb_logo.png" alt="Home")
+			|
+			|
+		#path_col.col-xs-7
+			|
+			|
+			#path_container
+				|
+				|
+				a.complementary_color(class="glyphicon glyphicon-home" href="/iedb/")
+				|
+				|
+				-if (typeof(current_path) !== 'undefined')
+					each stop in current_path
+						-var link = "/iedb/" + stop.path
+						span.bold_color(style = "display: inline" class="glyphicon glyphicon-menu-right ")
+						a.complementary_color(href=link)  #{stop.name}
+					|
+					|
+			|
+			|
+		#user_control_col.col-xs-3
+			|
+			|
+			#user_control_container
+				|
+				|
+				-if (typeof(user) == 'undefined')
+					form#signin_form(action="/iedb/signin" method="post" enctype="multipart/form-data")
+						|
+						|
+						label(class="labels bold_color" for = "signin_username")= 'Username: '
+						|
+						|
+						input(class="input_field bold_color" id="signin_username" type="text" name="signin_username")
+						|
+						|
+						<br>
+						|
+						|
+						label(class="labels bold_color" for = "signin_password")= 'Password: '
+						|
+						|
+						input(class="input_field bold_color" id="signin_password" type="password" name="signin_password")
+						|
+						|
+						<br>
+						|
+						|
+						input#signin_button(class="btn-primary complementary_background" type="button" onclick="document.getElementById('signin_form').submit()" value="Sign in")
+						|
+						|
+					|
+					|
+					a#signup_button(class="complementary_color" href="/iedb/signup") or Sign up!
+					|
+					|
+				-else
+					-var user_link = "/iedb/users/" + user.username
+					
+					a#user_btn(href=user_link )
+						|
+						|
+						span.complementary_color(class="glyphicon glyphicon-user")
+						|
+						|
+					<br>
+					<br>
+					|
+					|
+					a#signout_btn(class="complementary_color" href="/iedb/signout/") Sign out
+					|
+					|
+			|
+			|

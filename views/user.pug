@@ -1,0 +1,185 @@
+html
+	|
+	|
+	head
+		|
+		|
+		include includes/head.pug
+		|
+		|
+		link(rel='stylesheet' type='text/css' href='/css/user.css')
+		|
+		|
+		title #{user_requested.username}
+		|
+		|
+	|
+	|
+	body
+		|
+		|
+		include includes/header.pug
+		|
+		|
+		#content
+			|
+			|
+			#title-row.row
+				|
+				|
+				#user_icon_col.col-xs-1
+					|
+					|
+					#user_icon(class="glyphicon glyphicon-user")
+					|
+					|
+				|
+				|
+				#title_col.col-xs-11
+					|
+					|
+					h3 #{user_requested.username}'s Profile
+					|
+					|
+				|
+				|
+			|
+			|
+			#wrapper-row.row
+				|
+				|
+				#info-col.col-xs-4
+					|
+					|
+					#info-title-row.row
+						|
+						|
+						#info-title-col.col-xs-12
+							|
+							|
+							h3.text-center INFO
+							|
+							|
+						|
+						|
+					|
+					|
+					#info-username-row.row
+						|
+						|
+						#info-field-col.col-xs-5
+							|
+							|
+							h4.field Username:
+							|
+							|
+						|
+						|
+						#info-val-col.col-xs-7
+							|
+							|
+							h4.val #{user_requested.username}
+							|
+							|
+						|
+						|
+					|
+					|
+					#info-firstname-row.row
+						|
+						|
+						#info-field-col.col-xs-5
+							|
+							|
+							h4.field First Name:
+							|
+							|
+						|
+						|
+						#info-val-col.col-xs-7
+							|
+							|
+							h4.val #{user_requested.first_name}
+							|
+							|
+						|
+						|
+					|
+					|
+					#info-lastname-row.row
+						|
+						|
+						#info-field-col.col-xs-5
+							|
+							|
+							h4.field Last Name:
+							|
+							|
+						|
+						|
+						#info-val-col.col-xs-7
+							|
+							|
+							h4.val #{user_requested.last_name}
+							|
+							|
+						|
+						|
+					|
+					|
+				|
+				|
+				#stats-col.col-xs-8
+					|
+					|
+					#stats-title-row.row
+						|
+						|
+						#info-title-col.col-xs-12
+							|
+							|
+							h3.text-center STATS
+							|
+							|
+						|
+						|
+					|
+					|
+					mixin chapter_progress(chapter_num, elo)
+						|
+						|
+						div.row
+							|
+							|
+							div.col-xs-2(class="text-center")
+								label(for"progress_bar_id") Chapter #{chapter_num}
+								|
+								|
+							div.col-xs-10(class="text-center")
+								|
+								|
+								div.progress
+									|
+									|
+									//-Min elo is 1000 and max is 2000
+									-var percentage = (elo-1000)/10
+									-var progress_bar_id = "progress_bar_" + chapter_num
+									div#progress_bar_id(class="progress-bar-success" style="width:" + percentage + "%"  role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow=percentage) #{percentage}%
+									|
+									|
+								|
+								|
+							|
+							|
+						|
+						|
+					each chapter, chapter_index in user_requested.chapters
+						+chapter_progress(chapter_index+1, chapter.ability_level)
+				|
+				|
+			|
+			|
+		|
+		|
+	|
+	|

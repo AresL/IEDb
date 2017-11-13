@@ -1,0 +1,36 @@
+link(href="/js/star-rating/css/star-rating.css" media="all" rel="stylesheet" type="text/css")
+
+//- If the Exercise is unread or unsolved, disable rating
+if !userExercise.isRead || !userExercise.isSolved
+	input#inactive_rating.rating(class="rating-loading" data-show-clear="false")
+	|
+	|
+	
+//- If the Exercise is both read and solved, enable rating
+else if userExercise.isRead && userExercise.isSolved && !userExercise.isRated
+	form#rate_form.rating(action="/iedb/rate" method="post" enctype="multipart/form-data")
+		input(type="hidden" name="chapter_num" value=exercise.chapter)
+		|
+		|
+		input(type="hidden" name="exercise_num" value=exercise.number)
+		|
+		|
+		input#active_rating.rating(name="rating" class="rating-loading" data-show-clear="false")
+		|
+		|
+	|
+	|
+//- If the Exercise is read and solved and rated, show the rating
+else
+	|
+	|
+	h3 Your Rating:
+	|
+	|
+	input#display_rating(class="rating-loading" value=userExercise.rating data-show-clear="false")
+	|
+	|
+	
+	
+script(src="/js/star-rating/js/star-rating.js" type="text/javascript")
+script(src="/js/star-rating-settings.js" type="text/javascript")

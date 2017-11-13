@@ -1,0 +1,55 @@
+
+body{
+	background-color: #F3E7D6 !important;
+}
+
+/* Container: needed by Bootstrap, to cantain all rows and collumns */
+#container {
+	padding: 0px;
+	margin: 0px;
+}
+
+#content {
+	background-color: #9B92A4 !important;
+	color: #372349;
+	min-height: 78vh;
+	width: 1300px;
+	margin: auto;
+	margin-top: 1vh;
+	margin-bottom: 2vh;
+	padding: 20px;
+	padding-bottom: 40px;
+}
+
+#success-icon{
+	padding: 20px;
+	font-size: 110px;
+	color: #056400;
+}
+
+.complementary_color{
+	color: #AF7726 !important;
+}
+.bold_color{
+	color: #372349 !important;
+}
+.complementary_background{
+	background: #AF7726 !important;
+	color: #372349 !important;
+}
+.shade_background{
+	background: #2F0553 !important;
+	color: #AD8449 !important;
+}
+
+.odd-row {
+	background: #CCC2D9;
+	padding: 15;
+}
+
+.even-row {
+	background: #EEEAF2;
+	padding: 15;
+}
+
+

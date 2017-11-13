@@ -1,0 +1,143 @@
+
+html
+	|
+	|
+	head
+		|
+		|
+		include includes/head.pug
+		|
+		|
+		title Signin
+		|
+		|
+	|
+	|
+	body
+		|
+		|
+		include includes/header.pug
+		|
+		|
+		#content.text-center
+			|
+			|
+			//Row 1: Links to all Chapters
+			#title_row.row
+				|
+				|
+				#title.col-xs-12
+					|
+					|
+					h3 Signin
+				|
+				|
+			|
+			|
+			form#signin_form_bottom(class="form-horizontal" action="/iedb/signin" method="post" enctype="multipart/form-data")
+				|
+				|
+				if user_error
+					div(class="form-group has-error has-feedback")
+						label(for="signin_username" class="col-xs-4 control-label") Username:
+						|
+						|
+						div.col-xs-4
+							|
+							|
+							input(id="signin_username_bottom" class="form-control" type="text" name="signin_username")
+							|
+							|
+							span(class="glyphicon glyphicon-warning-sign form-control-feedback")
+							|
+							|
+						|
+						|
+						div.col-xs-4(class="text-left")
+							|
+							|
+							span(class="help-block") #{user_error}
+							|
+							|
+						|
+						|
+					|
+					|
+				else
+					div(class="form-group")
+						label(for=name class="col-xs-4 control-label") Username:
+						|
+						|
+						div.col-xs-4
+							|
+							|
+							input(id="signin_username_bottom" class="form-control" type="text" name="signin_username")
+							|
+							|
+						|
+						|
+						div.col-xs-4(class="text-left")
+						|
+						|
+					|
+					|
+				if password_error
+					div(class="form-group has-error has-feedback")
+						label(for="signin_password_bottom" class="col-sm-4 control-label") Password:
+						|
+						|
+						div.col-xs-4
+							|
+							|
+							input(id="signin_password_bottom" class="form-control" type="password" name="signin_password")
+							|
+							|
+							span(class="glyphicon glyphicon-warning-sign form-control-feedback")
+							|
+							|
+						|
+						|
+						div.col-xs-4(class="text-left")
+							|
+							|
+							span(class="help-block") #{password_error}
+							|
+							|
+						|
+						|
+					|
+					|
+				else
+					div(class="form-group")
+						label(for=name class="col-sm-4 control-label") Password:
+						|
+						|
+						div.col-xs-4
+							|
+							|
+							input(id="signin_password_bottom" class="form-control" type="password" name="signin_password")
+							|
+							|
+						|
+						|
+						div.col-xs-4(class="text-left")
+						|
+						|
+					|
+					|
+				|
+				|
+				#button(class="form-group col-xs-12")
+					|
+					|
+					button(type="button" class="btn-lg btn-primary complementary_background" onclick="document.getElementById('signin_form_bottom').submit()") Sign In
+					|
+					|
+				|
+				|
+			|
+			|
+		|
+		|
+	|
+	|

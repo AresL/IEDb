@@ -1,0 +1,94 @@
+
+link(rel='stylesheet' type='text/css' href='/css/exercise.css')
+
+html
+	|
+	|
+	head
+		|
+		|
+		include ../includes/head
+		|
+		|
+		title Exercise  #{exercise.chapter}.#{exercise.number}
+		|
+		|
+	|
+	|
+	body
+		|
+		|
+		include ../includes/header
+		|
+		|
+		#content
+			|
+			|
+			//- Row 1: Exercise's title
+			#title_row.row
+				|
+				|
+				#title.col-xs-10
+					|
+					|
+					h1 <strong>#{exercise.title}</strong>
+					|
+					|
+				|
+				|
+				#progress_1.col-xs-2
+					|
+					|
+					//- IT IS FUNCTIONAL, BUT I WANT IT VERTICAL
+					include progress_bar
+					|
+					|
+				|
+				|
+			|
+			|
+			//- Row 2: Exercise's text
+			#text_row.row
+				#text.col-xs-10()
+					|
+					|
+					h4 #{exercise.text}
+					|
+					|
+				|
+				|
+				#progress_2.col-xs-2
+				|
+				|
+			|
+			|
+			//- Row 3: Exercise's questions and answers
+			#read_row.row
+				#qNa.col-xs-10
+					|
+					|
+					include solve
+					|
+					|
+				#progress_2.col-xs-2
+				|
+				|
+			|
+			|
+			//- Row 4: Exercise's rating
+			#rate_row.row
+				#qNa.col-xs-10(class="text-center" align="center" )
+					|
+					|
+					include rate
+					|
+					|
+				#progress_2.col-xs-2
+				|
+				|
+			|
+			|
+		|
+		|
+	|
+	|

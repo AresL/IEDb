@@ -1,0 +1,56 @@
+#title_row {
+}
+
+	#title {
+	}
+
+	#progress_bar {
+		margin: auto;
+		
+	}
+
+#text_row {
+}
+
+#solve_row {
+	
+}
+
+	#submit_column {
+		padding: 15;
+	}
+	
+	#submit_button {
+		padding: 15;
+		vertical-align: bottom;
+	}
+	
+	.btn {
+		white-space: normal !important;
+	}
+
+	.full-width {
+		width: 100% !important;
+		}
+
+	.big_width {
+		width: 70% !important;
+		}
+		
+	.small_width {
+		width: 30% !important;
+		}
+		
+#rate_row {
+}
+
+.rating-container {
+	padding: 55;
+}
+
+ .caption {
+    display: block !important;
+	position: relative;
+	top: 25px;
+}
+

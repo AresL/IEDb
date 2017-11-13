@@ -1,0 +1,90 @@
+/* Header */
+#header {
+	background: #573675;
+	height: 18vh;
+	line-height: 2vh;
+	font-size: 2vh;
+	padding: 0px;
+	margin: 0px;
+}
+
+	#logo_col {
+		height: 100%;
+		padding: 0px;
+		margin: 0px;
+		position: relative;
+	}
+		
+		#logo {
+			max-height: 100%;
+			max-width: 100%;
+			padding: 1vh;
+			margin: auto;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			display: block;
+		}
+
+	#path_col{
+		height: 100%;
+		padding: 0px;
+		margin: 0px;
+		position: relative;
+		font-size: 3vh;
+	}
+	
+		#path_container{
+			max-height: 100%;
+			position: absolute;
+			bottom: 8vh;
+			left: 0;
+		}
+		
+	#user_control_col {
+		height: 100%;
+		padding: 0px;
+		margin: 0px;
+		position: relative;
+		text-align: center;
+	}
+
+		#user_control_container{
+			width: 100%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+			#user_btn{
+				display:block;
+				text-align:center;
+				font-size: 6vh;
+			}
+	
+			.labels {
+				padding: 0px;
+				margin: 0.5vh;
+				border-width: 0px;
+			}
+			
+			.input_field {
+				padding: 0.5vh;
+				margin: 0.5vh;
+				border-width: 0px;
+			}
+			
+			#signin_button {
+				padding: 0.5vh;
+				margin: 0.5vh;
+				border-width: 0px;
+				height: 10%;
+			}
+			
+			#signup_button {
+				padding: 0px;
+				margin: 0px;
+				border-width: 0px;
+				height: 10%;
+			}

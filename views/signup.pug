@@ -1,0 +1,153 @@
+
+html
+	|
+	|
+	head
+		|
+		|
+		include includes/head.pug
+		|
+		|
+		title Signup
+		|
+		|
+	|
+	|
+	body
+		|
+		|
+		include includes/header.pug
+		|
+		|
+		#content
+			|
+			|
+			//- If the user has't signed up yet
+			if !username
+				//Row 1: Links to all Chapters
+				#title_row.row
+					|
+					|
+					#title.col-xs-12(class="text-center")
+						|
+						|
+						h3 Sign up and start solving!
+						|
+						|
+					|
+					|
+				|
+				|
+				form#signup_form(class="form-horizontal" action="/iedb/signup" method="post" enctype="multipart/form-data")
+					|
+					|
+					mixin input_field(name, type, text, placeholder)
+						if attributes.error
+							div(class="form-group has-error has-feedback")
+								label(for=name class="col-sm-3 control-label") #{text}:
+								|
+								|
+								div.col-xs-3
+									|
+									|
+									input(id=name class="form-control" type=type name=name placeholder=placeholder)
+									|
+									|
+									span(class="glyphicon glyphicon-warning-sign form-control-feedback")
+									|
+									|
+								|
+								|
+								div.col-xs-6(class="text-left")
+									|
+									|
+									span(class="help-block") #{attributes.error}
+									|
+									|
+								|
+								|
+						else
+							div(class="form-group")
+								label(for=name class="col-sm-3 control-label") #{text}:
+								|
+								|
+								div.col-xs-3(class="text-left")
+									|
+									|
+									input(id=name class="form-control" type=type name=name placeholder=placeholder)
+									|
+									|
+							|
+							|
+						|
+						|
+					if input_error
+						if input_error.username
+							+input_field('username', 'text', 'Username', '')(error=input_error.username.msg)
+						else
+							+input_field('username', 'text', 'Username', '')
+						if input_error.pass
+							+input_field('pass', 'password', 'Password', '')(error=input_error.pass.msg)
+						else
+							+input_field('pass', 'password', 'Password', '')
+						if input_error.conf_pass
+							+input_field('conf_pass', 'password', 'Confirm Password', 'Confirm your password.')(error=input_error.conf_pass.msg)
+						else
+							+input_field('conf_pass', 'password', 'Confirm Password', 'Confirm your password.')
+						if input_error.first_name
+							+input_field('first_name', 'text', 'First Name', '')(error=input_error.first_name.msg)
+						else
+							+input_field('first_name', 'text', 'First Name', '')
+						if input_error.last_name
+							+input_field('last_name', 'text', 'Last Name', '')(error=input_error.last_name.msg)
+						else
+							+input_field('last_name', 'text', 'Last Name', '')
+					else
+						+input_field('username', 'text', 'Username', '')
+						+input_field('pass', 'password', 'Password', '')
+						+input_field('conf_pass', 'password', 'Confirm Password', 'Confirm your password.')
+						+input_field('first_name', 'text', 'First Name', '')
+						+input_field('last_name', 'text', 'Last Name', '')
+						
+					#button(class="form-group col-xs-12")
+						|
+						|
+						//- input#signup_button(class="btn-block" type="button" onclick="document.getElementById('signup_form').submit()" value="Create Profile")
+						button(type="button" class="btn-lg btn-primary center-block complementary_background" onclick="document.getElementById('signup_form').submit()") Create Profile
+					|
+					|
+				|
+				|
+			//- If the user just signed up
+			else
+				div.row(class="text-center")
+					|
+					|
+					div.col-xs-12
+						p
+							span(id="success-icon" class="glyphicon glyphicon-ok-circle")
+						|
+						|
+						h4 You successfully signed up with username <strong>#{username}</strong>. 
+						|
+						|
+						h4 Please sign in to continue.
+					|
+					|
+				|
+				|
+				div.row(class="h4 text-center")
+					|
+					|
+					div.col-xs-12(class="text-center")
+						|
+						|
+						button(type="button" class="btn-lg btn-primary complementary_background" onclick="location.href = '/iedb/signin';") Sign In
+					|
+					|
+				|
+				|
+	|
+	|
+|
+|

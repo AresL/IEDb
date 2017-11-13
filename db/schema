@@ -1,0 +1,54 @@
+
+//User
+//	An exercise is added when a user  reads it
+{
+	_id: USER_ID
+	username: USERNAME
+	password_hash: PASSWORD_HASH
+	first_name: FIRST_NAME
+	last_name: LAST_NAME
+	ability_level: 
+	[
+		{
+			chapter: CHAPTER
+			value: VALUE
+		}
+	]
+	
+	exercises: 
+	[
+		{
+			exercise_id: EXERCISE_ID
+			current_difficulty: CURRENT_DIFFICULTY
+			given_solution: GIVEN_SOLUTION
+			given_rate: GIVEN_RATE
+			solution_date: SOLUTION_DATE
+		}
+	]
+}
+
+
+//Exercise
+//	Difficulty refers to a specific range of user's ability levels. Over time this range will get narrower and each ability level will have a different difficulty.
+{
+	_id: EXERCISE_ID
+	title: TITLE
+	chapter: CHAPTER
+	number: NUMBER
+	text: TEXT
+	questions: 
+	[
+		{
+			question: QUESTION
+			solution: SOLUTION
+		}
+	]
+	difficulty:
+	[
+		{
+			starting_ability_level: STARTING_ABILITY_LEVEL
+			ending_ability_level: ENDING_ABILITY_LEVEL
+			value: VALUE
+		}
+	]
+}

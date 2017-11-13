@@ -1,0 +1,285 @@
+//- This mixin is used to provide a question-answer row
+mixin question(question_index, question, question_id, answer_wrapper, answer_code)
+	|
+	|
+	#question_id.col-xs-6
+		|
+		|
+		h5 #{question_index + 1}. #{question.question}
+		|
+		|
+	|
+	|
+	#answer_wrapper.col-xs-6
+		|
+		|
+		-var answer = question_index + "_answer"
+		if question.options.length > 0
+			#answer(class="btn-group btn-block" data-toggle="buttons")
+				|
+				|
+				each option, option_index in question.options
+					label(class="btn btn-default btn-block")
+						|
+						|
+						input(class="btn-block" type="radio", value=option_index, name=answer_code)
+						|
+						|
+						span #{option}
+						|
+						|
+					|
+					|
+				|
+				|
+		else
+			#answer(class="form-row")
+				|
+				|
+				div(class="col-auto")
+					|
+					|
+					div(class="input-group full-width")
+						|
+						|
+						input(class="form-control", type="number", name=answer_code)
+						|
+						|
+						label.solution(class="input-group-addon small_width")
+						|
+						|
+					|
+					|
+			|
+			|
+	|
+	|
+
+//- This mixin is used to provide a question-answer row, after the user has answered
+mixin solved_question(question_index, question, question_id, answer_wrapper)
+	|
+	|
+	#question_id.col-xs-6
+		|
+		|
+		h5 #{question_index + 1}. #{question.question}
+		|
+		|
+	|
+	|
+	#answer_wrapper.col-xs-6
+		|
+		|
+		-var answer = question_index + "_answer"
+		if question.options.length > 0
+			#answer(class="btn-group btn-block" data-toggle="buttons")
+				|
+				|
+				each option, option_index in question.options
+					//-If this is what the user answered
+					if userExercise.answers[question_index].answer == option_index
+						if userExercise.answers[question_index].isCorrect
+							a(class="btn btn-success active btn-block") #{option}
+							|
+							|
+						else
+							a(class="btn btn-danger disabled btn-block") #{option}
+							|
+							|
+					//-If this is not what the user answered
+					else
+						if question.answer == option_index
+							a(class="btn btn-default active btn-block") #{option}
+							|
+							|
+						else
+							a(class="btn btn-default disabled btn-block") #{option}
+							|
+							|
+					|
+					|
+				|
+				|
+		else
+			#answer(class="form-row")
+				|
+				|
+				if userExercise.answers[question_index].isCorrect
+					div(class="btn-group btn-group-justified")
+						|
+						|
+						a(class="btn btn-success active big_width") #{userExercise.answers[question_index].answer}
+						|
+						|
+						a(class="btn btn-default small_width disabled") #{question.answer}
+						|
+						|
+				else
+					div(class="btn-group btn-group-justified")
+						|
+						|
+						a(class="btn btn-danger big_width disabled") #{userExercise.answers[question_index].answer}
+						|
+						|
+						a(class="btn btn-default small_width disabled") #{question.answer}
+						|
+						|
+	|
+	|
+			
+//- Unread, unsolved
+if !userExercise.isRead
+	#questions_0.row
+		|
+		|
+		#questions_0_question.col-xs-6
+			|
+			|
+			h3 Questions:
+			|
+			|
+			each question, question_index in exercise.questions
+				h5 #{question_index + 1}. #{question.question}
+				|
+				|
+		#questions_0_answer.col-xs-6
+			|
+			|
+			h3 Answers:
+			|
+			|
+			form#solve_form(action="/iedb/read" method="post" enctype="multipart/form-data")
+				|
+				|
+				input(type="hidden" name="chapter_num" value=exercise.chapter)
+				|
+				|
+				input(type="hidden" name="exercise_num" value=exercise.number)
+				|
+				|
+				button#submit_button(type="button" class="btn-lg btn-primary complementary_background" onclick="document.getElementById('solve_form').submit()") Solve this Exercise
+				|
+				|
+			|
+			|
+		|
+		|
+	|
+	|
+//- Read, unsolved
+else if !userExercise.isSolved
+	#questions_0.row
+		|
+		|
+		#questions_0_question.col-xs-6
+			|
+			|
+			h3 Questions:
+			|
+			|
+		#questions_0_answer.col-xs-6
+			|
+			|
+			h3 Answers:
+			|
+			|
+		|
+		|
+	|
+	|
+	form#solve_form(class="form-check" action="/iedb/solve" method="post" enctype="multipart/form-data")
+		|
+		|
+		input(type="hidden" name="chapter_num" value=exercise.chapter)
+		|
+		|
+		input(type="hidden" name="exercise_num" value=exercise.number)
+		|
+		|
+		each question, question_index in exercise.questions
+			-var row_id = "questions_" + (question_index+1)
+			-var question_id = row_id + "_question"
+			-var answer_wrapper =  row_id + "_answer"
+			-var answer_code = "answer[" + question_index + "]"
+			//- "answer_code" must no be changed, as it is used by the server
+			if (question_index%2)==0
+				#row_id.row(class="even-row")
+					|
+					|
+					+question(question_index, question, question_id, answer_wrapper, answer_code)
+					|
+					|
+				|
+				|
+			else
+				#row_id.row(class="odd-row")
+					|
+					|
+					+question(question_index, question, question_id, answer_wrapper, answer_code)
+					|
+					|
+				|
+				|
+		#submit_row.row
+			|
+			|
+			#submit_column.col-xs-12(class="text-center")
+				|
+				|
+				button#submit_button(type="button" class="btn-lg btn-primary complementary_background" onclick="document.getElementById('solve_form').submit()") Submit Answer
+				|
+				|
+			|
+			|
+		|
+		|
+//- Read, solved
+else
+	form#solve_form(class="form-check")
+		|
+		|
+		#questions_0.row
+			|
+			|
+			#questions_0_question.col-xs-6
+				|
+				|
+				h3 Questions:
+				|
+				|
+			#questions_0_answer.col-xs-6
+				|
+				|
+				h3 Answers:
+				|
+				|
+			|
+			|
+		|
+		|
+		each question, question_index in exercise.questions
+			-var row_id = "questions_" + (question_index+1)
+			-var question_id = row_id + "_question"
+			-var answer_wrapper =  row_id + "_answer"
+			if (question_index%2)==0
+				#row_id.row(class="even-row")
+					|
+					|
+					+solved_question(question_index, question, question_id, answer_wrapper)
+					|
+					|
+				|
+				|
+			else
+				#row_id.row(class="odd-row")
+					|
+					|
+					+solved_question(question_index, question, question_id, answer_wrapper)
+					|
+					|
+				|
+				|
+	|
+	|
+|
+|
